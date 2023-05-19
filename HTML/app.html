@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bill Generator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Bill Generator</h1>
+  <form id="billForm">
+    <label for="itemName">Item Name:</label>
+    <input type="text" id="itemName" required>
+    <label for="itemPrice">Item Price:</label>
+    <input type="number" id="itemPrice" required>
+    <button type="submit">Add Item</button>
+  </form>
+  <div id="billItems">
+    <h2>Items:</h2>
+    <ul id="itemList">
+      <!-- Generated items will be added here -->
+    </ul>
+  </div>
+  <div id="billTotal">
+    <h2>Total:</h2>
+    <p id="totalAmount">0</p>
+  </div>
+</body>
+</html>
